@@ -1,0 +1,171 @@
+.login__container {
+    background: var(--color-bg1);
+    padding: 4rem;
+    display: flex;
+    grid-template-columns: 60% 40%;
+    gap: 6rem;
+    height: 35rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+    margin-top: 1px;
+    
+}
+.login__details li {
+    display: grid;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    position: center;
+    
+}
+
+.login__copyright {
+    text-align: center;
+    margin-top: 1.5rem;
+    padding: 1,2rem 0;
+    border-top: 1px solid var(--color-bg1);
+ 
+}
+
+
+/* ==================================== ASIDE ================================ */
+
+.login__aside {
+    background: var(--color-primary);
+    padding: 3rem;
+    border-radius: 1rem;
+    position: center;
+    bottom: 10rem;
+}
+
+
+.login__aside h2 {
+
+    width: 308px;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: var(--color-danger);
+    border-radius: 10px;
+    padding: 8px;
+}
+
+
+.login__socials {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 3rem;
+}
+
+.login__socials a {
+    background: var(--color-bg2);
+    padding: 0.5rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.login__socials a:hover {
+    background: transparent;
+}
+
+/* ========================================= FORM ============================== */
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+
+.form__username {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.form__password {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.login__form input[type="text"] {
+    width: 80%;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+}
+
+input {
+    width: 308px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid var(--color-white);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 22px;
+    padding: 1rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.login__form .btn {
+    width: max-content;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* ==================================== MEDIA QUERIES (TABLETS) ================================ */
+@media screen and (max-width: 1024px) {
+    login {
+    padding-bottom: 0;
+    }
+
+    .login__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .login__aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }
+
+    .login__form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+
+
+}
+    
+/* ==================================== MEDIA QUERIES (PHONES) ================================ */
+@media screen and (max-width: 600px) {
+    .login__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .login__form {
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .form__name input[type="text"] {
+        width: 100%;
+    }
+}

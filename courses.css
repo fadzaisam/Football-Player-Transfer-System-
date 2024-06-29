@@ -1,0 +1,51 @@
+/* =================== SEARCH & DROP DOWN ================= */
+.mid .search {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+
+input,
+select,
+textarea {
+    outline: none;
+    border: 0px solid var(--color-primary);
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+    font-family: "Monteserrat", sans-serif;
+    font-size: 0.9rem;
+}
+
+
+
+.categories select {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0%;
+    height: 90%;
+    background-color: var(--color-white);
+    border: none;
+    outline: none;
+}
+
+
+.mid {
+    background: var(--color-bg1);
+    padding: 4rem;
+    align-items: center;
+    display: grid;
+    gap: 4rem;
+    height: 15rem;
+    width: 42rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+
+
+
+/* ========================= SEARCH & DROP DOWN =======================*/
